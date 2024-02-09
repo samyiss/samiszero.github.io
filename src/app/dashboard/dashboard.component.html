@@ -161,32 +161,29 @@
     </svg>
   </div>
 
-  <section id="section-taylor">
-    <div class="flex object-bottom justify-center py-20">
+    <div class="flex object-bottom justify-center py-20" #taylor>
       <iframe width="1000"
               height="500"
               src="https://www.youtube.com/embed/sRxrwjOtIag?si=4NQDcqt_Zp56ldRu&autoplay=1&loop=1"
               title="YouTube video player"
-              allow="autoplay; fullscreen"
-              allowfullscreen
       > </iframe>
     </div>
-  </section>
+  <!--              allow="autoplay; fullscreen"-->
+  <!--              allowfullscreen-->
 
   <div class="flex object-bottom justify-center">
-    <a href="#section-taylor">
-      <button
-        type="button"
-        data-te-ripple-init
-        data-te-ripple-color="light"
-        class="!fixed bottom-5 rounded-full bg-TPD p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
-      >
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M11 4h2v12l5.5-5.5l1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5L11 16z"/>
-        </svg>
-      </button>
-    </a>
+    <button
+      type="button"
+      data-te-ripple-init
+      data-te-ripple-color="light"
+      class="scroll-button !fixed bottom-5 rounded-full bg-TPD p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
+      *ngIf="buttonVisible"
+      (click)="scrollToSection()"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M11 4h2v12l5.5-5.5l1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5L11 16z"/>
+      </svg>
+    </button>
   </div>
 
 </div>

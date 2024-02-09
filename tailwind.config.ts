@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'midnights': '#d8d5ce',
+      'midnights': '#edece8',
       'text-font': '#625548',
       'TPD': '#9e958b',
       'TEXT-TPD': '#72665b',
