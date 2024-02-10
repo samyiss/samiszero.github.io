@@ -9,6 +9,7 @@ module.exports = {
       'text-font': '#625548',
       'TPD': '#9e958b',
       'TEXT-TPD': '#72665b',
+      'hover': '#594e42'
     },
   },
   plugins: [

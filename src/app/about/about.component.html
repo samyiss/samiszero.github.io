@@ -1,3 +1,18 @@
-<div class="container mx-auto bg-midnights">
+<div class="mx-auto bg-midnights min-h-screen">
+  <div class='flex justify-end mt-5 ml-4 mr-4 min-h-screen bg-black'>
+    <div class="aspect-video cursor-pointer group">
+      <div class="object-center top-96 right-20 absolute opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+        <div class="flex justify-center items-center">
+          <div class="group-hover:opacity-100">
+            <p class="text opacity-60 font-serif text-xl text-midnights">
+              Kim Seon-ho - HomeTown Cha-Cha-Cha
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hover:bg-hover rounded-2xl">
+        <img [ngSrc]="image" class="hover:opacity-10 rounded-2xl" loading="eager" width="500" height="500" alt="pfp" />
+      </div>
+    </div>
+  </div>
 </div>
-
