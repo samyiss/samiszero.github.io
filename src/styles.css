@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #edece8;
+@font-face {
+  font-family: 'Nunito Light';
+  src: url("assets/Nunito-Light.ttf") format('truetype'); /* Adjust the path to your font file */
+  /* Add other font formats (woff, woff2, etc.) for better browser compatibility */
 }
 
-html {
+.textForm {
+
+  font-family: 'Nunito Light'; /* Apply the font to the body or any other element */
+  text-transform: uppercase;
+}
+body {
+  background: #edece8;
   scroll-behavior: smooth;
+}
+
+.txt {
+  font-family: "big-caslon-fb";
 }

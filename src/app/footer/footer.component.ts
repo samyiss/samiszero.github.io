@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {NgIf, NgOptimizedImage} from "@angular/common";
+import {Component, HostListener} from '@angular/core';
+import {NgClass, NgIf, NgOptimizedImage} from "@angular/common";
 import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
@@ -9,7 +9,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     NgIf,
     NgOptimizedImage,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    NgClass
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
@@ -17,4 +18,20 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 export class FooterComponent {
   currentYear: number = new Date().getFullYear();
   websiteName: string = "Samy Issiakhem";
+
+
+  isLargeScreen: boolean;
+
+  constructor() {
+    this.isLargeScreen = window.innerWidth > 768; // You can adjust the threshold as per your requirement
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.isLargeScreen = window.innerWidth > 768; // You can adjust the threshold as per your requirement
+  }
+
+  isScreenWidthLarge() {
+    return this.isLargeScreen;
+  }
 }
