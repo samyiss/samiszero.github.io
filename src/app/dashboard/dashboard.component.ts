@@ -1,13 +1,16 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {NgIf} from "@angular/common";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [
-    NgIf
-  ],
+    imports: [
+        NgIf,
+        RouterLink,
+        RouterLinkActive
+    ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })

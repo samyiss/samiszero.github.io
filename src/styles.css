@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Nunito Light';
-  src: url("assets/Nunito-Light.ttf") format('truetype'); /* Adjust the path to your font file */
-  /* Add other font formats (woff, woff2, etc.) for better browser compatibility */
+  font-family: 'nitti-typewriter-normal';
+  src: url("assets/IBMPlexMono-Regular.ttf") format('truetype');
 }
 
-.textForm {
+@font-face {
+  font-family: 'big-caslon-fb';
+  src: url("assets/CASLFS__.TTF") format('truetype');
+}
 
-  font-family: 'Nunito Light'; /* Apply the font to the body or any other element */
+
+.textForm {
+  font-family: 'nitti-typewriter-normal'; /* Apply the font to the body or any other element */
   text-transform: uppercase;
 }
 body {
@@ -20,4 +24,19 @@ body {
 
 .txt {
   font-family: "big-caslon-fb";
+}
+
+.cat-modal {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .cat-modal {
+    max-width: 100%;
+    max-height: 175%;
+  }
 }

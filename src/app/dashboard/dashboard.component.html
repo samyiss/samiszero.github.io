@@ -1,15 +1,30 @@
-<div class="bg-midnights">
+<div class="bg-midnights m-4">
 <!--  <div class="flex justify-center items-start min-w-screen min-h-screen">-->
 <!--    <h1 class="type-fruit font-mono break-words px-5 text-5xl text-white">-->
 <!--    </h1>-->
 <!--  </div>-->
-  <div class="grid grid-cols-3 justify-center gap-4 min-w-screen min-h-screen">
-    <div class="w-96 m-4">
-      <p class="textForm">dddd</p>
+  <div class="grid md:grid-cols-3 sm:grid-cols-1 justify-center min-w-screen">
+    <div class="flex items-end justify-center md:ml-2 md:mr-4 md:mb-4">
+      <div class="flex-col">
+        <div class="txt w-full text-4xl 2xl:text-6xl text-text-font uppercase text-center mb-20 2xl:mb-32 sm:mb-4">welcome to the samys tour</div>
+        <div class="textForm w-full text-2xl 2xl:text-4xl text-text-font text-center px-4 py-2">AVAILABLE APRIL 19</div>
+
+        <div class="flex justify-center mt-5 w-full">
+          <a routerLink="/about" routerLinkActive="active" class="w-96 2xl:w-[500px]">
+            <span>go to gallery</span>
+          </a>
+        </div>
+
+        <div class="flex justify-center mt-5 mb-10 w-full">
+          <a routerLink="/about" routerLinkActive="active" class="w-96 2xl:w-[500px]">
+            <span>go to projects</span>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="col-span-2 m-4 justify-end">
-      <svg width="1054" height="450" viewBox="0 0 854 476" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="md:col-span-2">
+      <svg width="1055" height="550" viewBox="0 0 854 476" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.00001 14C2.00001 20.7534 1.65502 26.9957 4.00001 33.4444C5.65805 38.0041 14.4507 41.1214 17.5 37.0556C21.5385 31.6709 26 27.4497 26 20C26 16.2984 23.8369 22.7707 23.2222 24C21.2725 27.8995 20 29.4291 20 34C20 43.2255 26.0518 47 35.5556 47C43.3229 47 48.74 38.1802 49.9445 31.5556C50.4293 28.8889 51.3336 17.2549 47 17C43.0305 16.7665 45.0149 22.8251 47.7778 23.7778C54.3603 26.0476 62.1522 25 69 25" stroke="black" stroke-width="3" stroke-linecap="round"/>
         <path d="M75 34C80.6982 29.8558 88.6287 28.9505 85.9444 19.5556C84.7107 15.2374 71.8731 21.4075 69.7777 23C60.7425 29.8668 61.2428 51.2759 75 52C80.6035 52.2949 87.5683 55.561 91 49.5556C94.6924 43.0938 99.7937 37.857 103.222 31C106.069 25.3072 108.053 17.2418 108.944 11C109.329 8.31036 109 5.38543 109 2.66666C109 1.36403 108.596 5.28603 108 6.44444C106.841 8.69752 105.354 10.7371 104.222 13C100.192 21.0613 90.7224 42.1779 100.222 49.7778C106.205 54.5642 114.105 46.4356 119 43.4444C125.853 39.2564 128.401 29.9085 130.778 22.7778C131.343 21.0824 134.818 4.81697 133.389 5.61111C124.785 10.3909 121.104 23.8379 116 31.7778C112.229 37.6436 112 42.7845 112 49.5C112 55.5034 123.687 58 128 58" stroke="black" stroke-width="3" stroke-linecap="round"/>
         <path d="M186 11C186.905 19.1432 188 26.5456 188 35C188 43.6667 188 52.3333 188 61" stroke="black" stroke-width="3" stroke-linecap="round"/>
@@ -167,24 +182,17 @@
     </div>
   </div>
 
-  <div class="flex object-bottom justify-center py-20" #taylor>
-    <iframe width="1000"
-            height="500"
-            src="https://www.youtube.com/embed/sRxrwjOtIag?si=4NQDcqt_Zp56ldRu&autoplay=1&loop=1"
-            title="YouTube video player"
-    > </iframe>
+  <div class="flex items-end object-bottom justify-center py-20 mt-96" #taylor>
+    <iframe width="1000" height="500" class="w-96 h-52" src="https://www.youtube.com/embed/sRxrwjOtIag?si=4NQDcqt_Zp56ldRu&autoplay=1&loop=1" title="YouTube video player"> </iframe>
   </div>
   <!--              allow="autoplay; fullscreen"-->
   <!--              allowfullscreen-->
 
   <div class="flex object-bottom justify-center">
     <button
-      type="button"
-      data-te-ripple-init
-      data-te-ripple-color="light"
+      type="button" data-te-ripple-init data-te-ripple-color="light"
       class="scroll-button !fixed bottom-5 rounded-full bg-TPD p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
-      *ngIf="buttonVisible"
-      (click)="scrollToSection()"
+      *ngIf="buttonVisible" (click)="scrollToSection()"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path fill="currentColor" d="M11 4h2v12l5.5-5.5l1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5L11 16z"/>
