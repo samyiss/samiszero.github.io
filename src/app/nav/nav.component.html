@@ -1,7 +1,7 @@
 <nav class="Header bg-midnights sticky top-0 z-50 w-full">
   <div class="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-5 divider divider-start">
     <div class="flex items-center space-x-3 md:order-1 mr-4 rtl:space-x-reverse">
-      <a routerLink="/dashboard" routerLinkActive="active" class="flex items-center text-center">
+      <a routerLink="/" routerLinkActive="active" class="flex items-center text-center">
         <img [ngSrc]="NavBarInfo.image" loading="eager" class="h-16" width="50" height="200" alt="Logo"/>
         <span class="self-center text-text-font txt text-4xl ml-4">{{NavBarInfo.name}}</span>
       </a>
@@ -12,7 +12,7 @@
     <div class="justify-between md:order-3 hidden md:block ml-4 mr-4" id="navbar-sticky">
       <ul class="flex flex-col font-medium rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li class="my-1">
-          <a routerLink="/dashboard" routerLinkActive="active" class="txt block text-3xl text-TEXT-TPD hover:text-text-font p-2">Home  /</a>
+          <a routerLink="/" routerLinkActive="active" class="txt block text-3xl text-TEXT-TPD hover:text-text-font p-2">Home  /</a>
         </li>
         <li class="my-1">
           <a routerLink="/about" routerLinkActive="active" class="txt block text-3xl text-TEXT-TPD hover:text-text-font p-2">About  /</a>
@@ -58,7 +58,7 @@
   <div *ngIf="NavBarInfo.isClicked" class="md:hidden">
     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
       <li class="my-1">
-        <a routerLink="/dashboard" routerLinkActive="active" class="txt block text-3xl text-TEXT-TPD hover:text-text-font p-2">Home</a>
+        <a routerLink="/" routerLinkActive="active" class="txt block text-3xl text-TEXT-TPD hover:text-text-font p-2">Home</a>
       </li>
       <li class="my-1">
         <a routerLink="/about" routerLinkActive="active" class="txt block text-3xl text-TEXT-TPD hover:text-text-font p-2">About</a>

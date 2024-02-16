@@ -9,7 +9,15 @@ module.exports = {
       'text-font': '#625548',
       'TPD': '#9e958b',
       'TEXT-TPD': '#72665b',
-      'hover': '#594e42'
+      'hover': '#594e42',
+      'fearless': '#a68249',
+      'red': '#94242c',
+      'midnight': '#26236b',
+      'TS1989': '#87adcc',
+      'reputation': '#000000',
+      'evermore': '#523211',
+      'folklore': '#abaaaa',
+      'speaknow': "#6d396f"
     },
   },
   plugins: [
