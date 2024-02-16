@@ -1,0 +1,21 @@
+# Site settings
+title: Samy Issiakhem
+description: A brief description of your site
+url: "https://samyiss.github.io" # The base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown # The Markdown parser/renderer you want to use
+theme: jekyll-theme-minimal # The Jekyll theme you want to use (optional)
+
+# GitHub Pages settings
+repository: samyiss/samyiss.github.io # Your GitHub repository name
+baseurl: "/" # The subpath of your site, e.g., /blog
+exclude: [vendor] # Exclude directories from the build process
+
+# Permalinks
+permalink: /:categories/:title/ # URL structure for posts/pages
+
+# Plugins
+plugins:
+  - jekyll-feed # Generate an Atom feed of your posts
+  # Add any other Jekyll plugins you need
