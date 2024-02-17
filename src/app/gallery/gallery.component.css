@@ -15,3 +15,9 @@ ul li button:hover:before {
 ul li button:hover .overlay {
   opacity: 1;
 }
+
+img {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}

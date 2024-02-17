@@ -19,7 +19,7 @@ export class DashboardComponent {
   @ViewChild('taylor') taylorElement!: ElementRef;
   buttonVisible: boolean = true;
 
-  constructor(private titleService:Title) {
+  constructor(private titleService: Title) {
     window.addEventListener('scroll', this.toggleButtonVisibility);
     this.titleService.setTitle("Home - Samy Issiakhem");
   }

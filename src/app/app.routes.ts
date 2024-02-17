@@ -6,6 +6,7 @@ import { ResumeComponent } from "./resume/resume.component";
 import {GalleryComponent} from "./gallery/gallery.component";
 import {ProjectsComponent} from "./projects/projects.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
+import {RedComponent} from "./red/red.component";
 
 export const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -13,6 +14,7 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'gallery', component: GalleryComponent },
+  { path: 'gallery/red', component: RedComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
