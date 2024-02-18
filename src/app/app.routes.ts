@@ -15,6 +15,7 @@ export const routes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'gallery/red', component: RedComponent },
+  { path: 'gallery/red', component: RedComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: '**', component: PageNotFoundComponent }
 ];

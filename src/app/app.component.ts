@@ -4,6 +4,7 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
 import {NavComponent} from "./nav/nav.component";
 import {FooterComponent} from "./footer/footer.component";
 import {ChatbotComponent} from "./chatbot/chatbot.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',

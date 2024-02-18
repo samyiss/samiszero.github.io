@@ -22,6 +22,8 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@types/node": "^20.11.19",
+    "http": "^0.0.1-security",
     "rxjs": "~7.8.0",
     "tailwind-typewriter": "^1.0.1",
     "tslib": "^2.3.0",
