@@ -11,7 +11,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  getRedAlbum(): Observable<Gallery[]> {
-    return this.http.get<Gallery[]>(`http://localhost:5034/api/Gallery/red`);
+  getAlbum(era: string): Observable<Gallery[]> {
+    return this.http.get<Gallery[]>(`${(this.baseUrl)}/Gallery/${era}`);
   }
 }

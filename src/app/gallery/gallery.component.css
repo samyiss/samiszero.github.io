@@ -1,21 +1,3 @@
-ul li button:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: .3s;
-}
-
-ul li button:hover:before {
-  top: 0;
-}
-
-ul li button:hover .overlay {
-  opacity: 1;
-}
-
 img {
   object-fit: cover;
   width: 400px;

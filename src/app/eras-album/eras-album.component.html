@@ -1,0 +1,13 @@
+<div class="bg-midnights m-4">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid gap-4" *ngFor="let gallery of listePictures;">
+      <div>
+        <img class="h-auto max-w-full rounded-lg"
+             [ngSrc]="gallery.picture_url"
+             [alt]="gallery.description + gallery.picture_date + gallery.gallery_id"
+             width="400" height="400"
+        >
+      </div>
+    </div>
+  </div>
+</div>
