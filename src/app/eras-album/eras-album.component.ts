@@ -28,12 +28,10 @@ export class ErasAlbumComponent implements OnInit {
       this.pageId = params['id'];
 
       // Depending on the pageId, you can adjust behavior, load data, etc.
-      this.apiService.getAlbum(this.pageId).subscribe((gallery) => {
-        this.listePictures = gallery
+      this.apiService.getAlbum().subscribe((gallery) => {
+        this.listePictures = gallery[this.pageId]
       })
     });
-
-
   }
 }
 
