@@ -4,7 +4,7 @@
 <!--    </h1>-->
 <!--  </div>-->
   <div class="grid md:grid-cols-3 sm:grid-cols-1 justify-center min-w-screen">
-    <div class="flex items-end justify-center md:ml-2 md:mr-4 md:mb-4">
+    <div class="flex items-end justify-center md:ml-2 md:mr-4 ">
       <div class="flex-col">
         <div class="txt w-full text-4xl 2xl:text-6xl text-text-font uppercase text-center mb-20 2xl:mb-32 sm:mb-4">welcome to the samys tour</div>
         <div class="textForm w-full text-2xl 2xl:text-4xl text-text-font text-center px-4 py-2">AVAILABLE APRIL 19</div>
@@ -182,12 +182,62 @@
     </div>
   </div>
 
+
+  <!-- Display three projects with button to to projects' page -->
+  <div class="flex flex-wrap text-center justify-center items-center mt-32">
+    <div class="md:order-1">
+        <p class="text-text-font txt text-3xl sm:text-4xl ml-6 sm:ml-4 uppercase mr-6">Projects</p>
+    </div>
+
+    <div class="flex-grow h-0.5 bg-TPD md:order-2 hidden sm:block"></div>
+
+    <div class="justify-center md:order-3 md:block ml-4 sm:ml-6 mr-4 mt-1">
+      <ul class="flex flex-col justify-center font-medium rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <a routerLink="/projects" routerLinkActive="active" class="w-64">
+          <span>go to projects</span>
+        </a>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Three projects ON PROGRESS-->
+<!--  <div class="grid md:grid-cols-3 sm:grid-cols-1 justify-center min-w-screen">-->
+<!--    <div class="flex justify-center md:ml-2 md:mr-4 ">-->
+<!--        <div class="flex justify-center mt-5 mb-10 w-full">-->
+<!--          <a routerLink="/projects" routerLinkActive="active" class="w-96 2xl:w-[500px]">-->
+<!--            <span>go to projects</span>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="flex justify-center md:ml-2 md:mr-4 ">-->
+<!--      <div class="flex justify-center mt-5 mb-10 w-full">-->
+<!--        <a routerLink="/projects" routerLinkActive="active" class="w-96 2xl:w-[500px]">-->
+<!--          <span>go to projects</span>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="flex justify-center md:ml-2 md:mr-4 ">-->
+<!--      <div class="flex justify-center mt-5 mb-10 w-full border-TEXT-TPD border-1">-->
+<!--                    <div class="txt w-full text-4xl 2xl:text-6xl text-text-font uppercase text-center mb-20 2xl:mb-32 sm:mb-4">welcome to the samys tour</div>-->
+<!--                    <div class="textForm w-full text-2xl 2xl:text-4xl text-text-font text-center px-4 py-2">AVAILABLE APRIL 19</div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+  <!-- ALL TOO WELL MV -->
   <div class="flex items-end object-bottom justify-center py-20 mt-96" #taylor>
     <iframe width="1000" height="500" class="w-96 h-52" src="https://www.youtube.com/embed/sRxrwjOtIag?si=4NQDcqt_Zp56ldRu&autoplay=1&loop=1" title="YouTube video player"> </iframe>
   </div>
   <!--              allow="autoplay; fullscreen"-->
   <!--              allowfullscreen-->
 
+
+  <!-- Button to scroll to the video -->
   <div class="flex object-bottom justify-center">
     <button
       type="button" data-te-ripple-init data-te-ripple-color="light"

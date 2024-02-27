@@ -52,5 +52,13 @@ export class ErasAlbumComponent implements OnInit {
     this.dialog.closeAll();
   }
 
+  // selectedImage: string = ""
+  //
+  // showModal = false;
+  // toggleModal(imgUrl: string){
+  //   this.selectedImage = imgUrl
+  //   this.showModal = !this.showModal;
+  // }
+
 }
 

@@ -1,6 +1,6 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {NgIf} from "@angular/common";
+import {NgIf, NgOptimizedImage} from "@angular/common";
 import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
@@ -9,7 +9,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     imports: [
         NgIf,
         RouterLink,
-        RouterLinkActive
+        RouterLinkActive,
+        NgOptimizedImage
     ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
