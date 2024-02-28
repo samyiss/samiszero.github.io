@@ -19,6 +19,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 export class DashboardComponent {
   @ViewChild('taylor') taylorElement!: ElementRef;
   buttonVisible: boolean = true;
+  bof: string = "assets/images/cover.png"
+  nm: string = "assets/images/logo.png"
 
   constructor(private titleService: Title) {
     window.addEventListener('scroll', this.toggleButtonVisibility);

@@ -14,7 +14,14 @@
 
   iframe {
     width: 1000px;
-    height: 500px;
+    height: 550px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  img {
+    width: 275px;
   }
 }
 
@@ -22,6 +29,14 @@
   .grid svg {
     width: 1075px;
     height: 675px;
+  }
+
+  img {
+    width: 375px;
+  }
+
+  .near {
+    width: 300px;
   }
 }
 
@@ -74,4 +89,13 @@ span::before {
 
 span:hover::before {
   transform: scaleX(1);
+}
+
+.projects {
+  transition: .3s ease-in-out all;
+  border: 1px solid #776c60;
+}
+
+.projects:hover img {
+  transform: scale(1.05);
 }
