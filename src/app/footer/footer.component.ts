@@ -31,7 +31,20 @@ export class FooterComponent {
     this.isLargeScreen = window.innerWidth > 768; // You can adjust the threshold as per your requirement
   }
 
-  isScreenWidthLarge() {
-    return this.isLargeScreen;
+  onNavigateGitLab(){
+    window.open("https://gitlab.com/samyiss", "_blank");
   }
+  onNavigateLinkedIn(){
+    window.open("https://www.linkedin.com/in/samy-issiakhem-09b6b6261/", "_blank");
+  }
+  onNavigateGitHub(){
+    window.open("https://github.com/samyiss", "_blank");
+  }
+  onNavigateGmail(){
+    window.open("https://www.google.com", "_blank");
+  }
+  onNavigateDiscord(){
+    window.open("https://www.google.com", "_blank");
+  }
+
 }

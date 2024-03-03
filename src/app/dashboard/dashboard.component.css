@@ -12,18 +12,31 @@
     max-height: 175%;
   }
 
-  iframe {
-    width: 1000px;
-    height: 550px;
-  }
 }
 
 
 @media (max-width: 640px) {
   img {
-    width: 275px;
+    width: 225px;
+  }
+
+  iframe {
+    width: 500px !important;
+    height: 250px !important;
+  }
+
+  .near {
+    width: 200px;
   }
 }
+
+@media (max-width: 1536px) {
+  iframe {
+    width: 800px;
+    height: 450px;
+  }
+}
+
 
 @media (min-width: 1536px) {
   .grid svg {

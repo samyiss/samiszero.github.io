@@ -38,7 +38,7 @@ export class ErasAlbumComponent implements OnInit {
 
     setTimeout(() => {
       this.closeLoadingOverlay();
-    }, 1000);
+    }, 4000);
   }
 
   openLoadingOverlay(): void {
@@ -50,7 +50,18 @@ export class ErasAlbumComponent implements OnInit {
 
   closeLoadingOverlay(): void {
     this.dialog.closeAll();
+    this.scrollToTop()
   }
+
+  scrollToTop(): void {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
+
 
   // selectedImage: string = ""
   //
@@ -59,6 +70,5 @@ export class ErasAlbumComponent implements OnInit {
   //   this.selectedImage = imgUrl
   //   this.showModal = !this.showModal;
   // }
-
 }
 

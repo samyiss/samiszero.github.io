@@ -15,7 +15,6 @@
 
 .textForm {
   font-family: 'nitti-typewriter-normal'; /* Apply the font to the body or any other element */
-  text-transform: uppercase;
 }
 body {
   background: #edece8;
@@ -39,4 +38,21 @@ body {
     max-width: 100%;
     max-height: 175%;
   }
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #72665b;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #edece8;
 }

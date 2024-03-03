@@ -1,0 +1,43 @@
+[
+  {
+    "project_id": 11,
+    "name": "Book of friends",
+    "date_project": "2023",
+    "short_description": "Book of friends is a web application offering seamless document browsing, real-time availability checks, and easy reservations with email notifications. Administrators enjoy comprehensive inventory management and reservation tracking. ",
+    "detailed_description": "Book of friends is a web application designed to cater to the needs of a fictional small library that offers a diverse range of media, including books, comics/manga, movies, and albums. The application allows the subscriber to view a document and check its availability and reserve an item if it's not already reserved or waiting to be picked. Users must be logged in to reserve a document or register if they do not have an account, once they reserve a document an email is sent to the assigned email when the document is ready to be picked. For the administrator, it allows him to consult, modify, add, delete a document and view the list of the documents that have been reserved.",
+    "authors": [
+      {
+        "author_id": 1,
+        "name": "Samy Issiakhem",
+        "authors_projects": null
+      }
+    ],
+    "tags": [
+      {
+        "tag_id": 3,
+        "name": "Javascript",
+        "tags_projects": null
+      },
+      {
+        "tag_id": 4,
+        "name": "Reactjs",
+        "tags_projects": null
+      },
+      {
+        "tag_id": 5,
+        "name": "BulmaCSS",
+        "tags_projects": null
+      }
+    ],
+    "Tags_projects": [],
+    "authors_projects": [],
+    "pictures": [
+      {
+        "picture_id": 15,
+        "picture": "https://firebasestorage.googleapis.com/v0/b/portfolio-5d345.appspot.com/o/pictures%2Fcover.png?alt=media&token=785b27c1-fbfa-41ab-b3da-390fde3ea0a0"
+      }
+    ],
+    "giturl": "https://gitlab.com/book-of-friends/appweb",
+    "apiurl": ""
+  }
+]
