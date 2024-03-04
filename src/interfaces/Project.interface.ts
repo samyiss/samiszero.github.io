@@ -12,5 +12,6 @@ export interface Project {
   tags: Tag[],
   pictures: Picture[],
   giturl: string,
-  apiurl: string
+  apiurl: string,
+  state: boolean
 }

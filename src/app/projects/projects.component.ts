@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgForOf, NgOptimizedImage} from "@angular/common";
+import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {Title} from "@angular/platform-browser";
 import {Gallery} from "../../interfaces/Gallery.interface";
@@ -8,6 +8,7 @@ import {LoadingComponent} from "../loading/loading.component";
 import {MatDialog} from "@angular/material/dialog";
 import {ApiService} from "../api.service";
 import {Author} from "../../interfaces/Author.interface";
+import {Tag} from "../../interfaces/Tag.interface";
 
 @Component({
   selector: 'app-projects',
@@ -16,7 +17,8 @@ import {Author} from "../../interfaces/Author.interface";
     NgOptimizedImage,
     RouterLink,
     RouterLinkActive,
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
@@ -62,5 +64,9 @@ export class ProjectsComponent {
 
   getAuthors(list: any[]): string {
     return list.map(({name}) => name).join(", ");
+  }
+
+  hasTag(tag: string, list: Tag[]): boolean {
+    return list.find(({name}) => name.toLowerCase().includes(tag)) != null
   }
 }
