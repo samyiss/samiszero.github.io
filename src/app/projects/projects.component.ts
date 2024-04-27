@@ -24,7 +24,6 @@ import {Tag} from "../../interfaces/Tag.interface";
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  nm: string = "assets/images/logo.png"
   listeProjects: Project[] = [];
 
   constructor(private titleService: Title, public dialog: MatDialog, private apiService: ApiService) {

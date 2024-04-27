@@ -18,6 +18,7 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 export class FooterComponent {
   currentYear: number = new Date().getFullYear();
   websiteName: string = "Samy Issiakhem";
+  email: string = "samylichine.iss@gmail.com"
 
 
   isLargeScreen: boolean;
@@ -41,7 +42,7 @@ export class FooterComponent {
     window.open("https://github.com/samyiss", "_blank");
   }
   onNavigateGmail(){
-    window.open("https://www.google.com", "_blank");
+    window.location.href = `mailto:${this.email}`;
   }
   onNavigateDiscord(){
     window.open("https://www.google.com", "_blank");
